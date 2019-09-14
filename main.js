@@ -53,7 +53,6 @@ class TypeWriter {
   }
 }
 
-
 // Init On DOM Load
 document.addEventListener('DOMContentLoaded', init);
 
@@ -62,6 +61,24 @@ function init() {
   const txtElement = document.querySelector('.txt-type');
   const words = JSON.parse(txtElement.getAttribute('data-words'));
   const wait = txtElement.getAttribute('data-wait');
+ 
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+//Parallax
+
+window.addEventListener('scroll', function(e) {
+  let target = document.querySelectorAll('.scroll')
+  let index = 0
+  const length = target.length 
+  
+  for( index; index < length; index++ ) {
+    let positionY = window.pageYOffset * parseFloat( target[index].dataset.ratey )
+    let positionX = window.pageYOffset * parseFloat( target[index].dataset.ratex )
+    
+    
+    target[index].style.transform = 'translate3d(' + positionX +'px,' + positionY + 'px, 0px)'
+  }
+  
+})
