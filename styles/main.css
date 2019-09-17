@@ -63,7 +63,6 @@ a {
 
 .button-container {
   padding: 0;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,6 +75,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 1pt solid white;
 }
 
 .button {
@@ -88,9 +88,7 @@ a {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 2px;
-  border-top: 1pt solid white;
-  border-left: 1pt solid white;
-  border-right: 1pt solid white;
+  border-bottom: 1pt solid white;
 }
 
 .button:hover {
@@ -98,7 +96,7 @@ a {
 }
 
 #Contact {
-  border-bottom: 1pt solid white;
+  border-bottom: none;
 }
 
 .myModal {
@@ -430,11 +428,17 @@ input[type=submit]:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border: 1pt solid white;
   }
   .button-container .button {
     font-size: 16px;
     padding: 1rem;
     width: 150px;
+    border: none;
+    border-left: 1pt solid white;
+  }
+  #Intro {
+    border-left: none;
   }
   .modal-content {
     padding: 2.5rem;
@@ -504,13 +508,6 @@ input[type=submit]:hover {
     font-size: 18px;
     padding: 1rem;
     width: 175px;
-    border: none;
-    border-top: 1pt solid white;
-    border-bottom: 1pt solid white;
-    border-left: 1pt solid white;
-  }
-  #Contact {
-    border-right: 1pt solid white;
   }
   .modal-content {
     padding: 2.5rem;
