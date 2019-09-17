@@ -4,19 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jordan's Website</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Jordan Haddad</title>
+    <link rel="stylesheet" href="styles/main.css"> 
+    <link rel="shortcut icon" type="image/png" href="/images/blacklogo.png">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/738872c7d6.js"></script>
 </head>
-<body>
+
+<body class="body">
     <div class="bg-container">
+        <div class="logo">
+            <img src="/images/white logo.svg" alt="jordan haddad logo">
+        </div>
+    
         <h1 class="scroll" data-rateY="-1" data-rateX="0">
-            Jordan Haddad<br> the <br><span class="txt-type" data-wait="3000" data-words='["Analyst", "Consultant", "Creator", "Problem Solver"]'></span>
+            JORDAN HADDAD<br><hr style="width: 20%"><span class="txt-type" data-wait="3000" data-words='["ANALYST", "CONSULTANT", "CREATOR", "PROBLEM SOLVER"]'></span>
         </h1>
+
+        <div class="button-container">
+            <button id="Intro" class="button" data-modal="introModal">Intro</button>
+            <button id="About" class="button" data-modal="aboutModal">About</button>
+            <a id="resumelink" href="/pages/resume.html" class="button">Resume</button></a>
+            <button id="resumeButton" class="button" data-modal="resumeModal">Resume</button>
+            <button id="Contact" class="button" data-modal="contactModal">Contact</button>
+        </div>
+    </div>
+ 
+    <div id="introModal" class="myModal">
+        <div class="modal-content">
+            <span class="closeBtn" data-modal="introModal">&times;</span>
+            <h2>Intro</h2>
+            <div id="headshot" class="modal-image"></div>
+        
+            <div class="modal-body">
+                <h3>Who am I?</h3>
+                <p>
+                    I am a business professional born in California, raised in Texas, and currently residing in Pittsburgh, Pennsylvania. I have a Bachelor's degree in Economics from Vanderbilt University in Nashville, Tennessee, and I have 5+ years of experience in the Commercial Real Estate Finance industry in New York City, where I lived and worked from 2013 to 2018.
+                <p>
+                <p>
+                    I Excel at gathering abstract business requirements and delivering solutions that are adapatble, innovative,and have measureable benefit to the customer. I posseses strong analytical, interpersonal, and technical skills, and the ability to collaborate with cross-functional business teams.
+                </p>
+                <p>
+                    <b>P.S.</b> I made this site entirely with HTML, CSS, and Javascript/jQuery - No bootstrap or other frameworks!
+                </p>
+            </div>
+        </div>
     </div>
 
-    <div class="container"></div>
-                      
+        
+    <div id="aboutModal" class="myModal">
+        <div class="modal-content">
+            <span class="closeBtn" data-modal="aboutModal">&times;</span>
+            <h2>My Story</h2>
+            <div id="photo-me" class="modal-image"></div>
+            <div class="modal-body">
+                <h3>
+                    Personal Statement
+                </h3>
+                <p>
+                    As a tech enthusiast, I love improvement. Throughout my career, the need to ask questions, identify problems, and provide solutions has fueled my ambition. Whether I am working  on a project with thousands of raw data points or collaborating with an international team of people, I have always endeavored to approach each problem with a solution-focused attitude. My favorite places to be are on a snowboard, on a beach, wandering around a foreign country, or hanging out with my dog.
+                </p>
+                <h3>
+                    Where I've Been
+                </h3>
+                <p>
+                    I worked in Commercial Real Estate Finance for 5 years in New York City, where I consulted on and underwrote over $5 billion worth of transactions. During this time, I engineered new procedures that became company standards and improved existing processes, saving my team 10+ hours per week. I managed teams in India and Puerto Rico, and mentored new analysts in New York.  I collaborated with a diverse set of clients, from small family offices to large multinational corporations. This varied experience exposed me to the many inefficient systems, technologies, and processes that stifle productivity. However, I viewed each day at work as an opportunity to identify these inefficiencies and implement creative solutions.
+                </p>
+                <h3>
+                    Where I'm Headed
+                </h3>
+                <p>
+                    Currently, I am located in Pittsburgh, PA in the East Liberty Area. I am seeking to join the product team of a forward-thinking company where I can make a tangible impact. My curious nature and passion for technology has made me keenly interested in the way we interact with products every day. Additionally, I believe that everything is a product, and in order to make the best products, the needs of the user should always come first.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="resumeModal" class="myModal">
+        <div id="resumemodalwidth" class="modal-content">
+            <span class="closeBtn" data-modal="resumeModal">&times;</span>
+                       
+            <div class="modal-body">
+                <div class="resume">
+                    <h2 id="myname">JORDAN HADDAD</h2>
+                    <h3 id="mytitle">Probelm Solver</h3>
+                    <div class="resumelinks">
+                        <p>jmhactual@gmail.com | (214)-405-9583 | 6105 Spirit St, Pittsburgh, PA 15206</p>
+                    </div>
+                    
+                    <div class="section-title" id="profile">
+                            <img class=section-img src="images/profile.svg" alt="experiencebanner">
+                    </div>
+                    <p>
+                        Business Professional with 5+ years of experience in data analysis, project management, and client relations in New York City. Excels at gathering abstract business requirements and delivering products that are adapatble, innovative, and have measureable benefit to the customer. Posseses strong interpersonal skills and the ability to collaborate with cross-functional business teams. 
+                    </p>
+            </section>
     
-    <script src="main.js"></script>
+            <section>
+                <div class="section-title" id="experience">
+                    <img class=section-img src="images/experiencelarge.svg" alt="experiencebanner">
+                </div>
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company"><a href="https://www.situs.com">SITUS, LLC <small><i>(full-service commercial real estate consulting firm)</i></small></a></div>
+                                <div class="job-title">Associate</div>
+                            </div>
+                            <div>
+                                <div class="job-location">New York, NY</div>
+                                <div class="job-length">June 2015 - July 2018</div>
+                            </div>
+                        </div> <!--end job-title-container-->
+                        <div class="job-bullets">
+                            <div class="bullet-item">
+                                <ul>
+                                    <li>
+                                        <b>Innovation:</b> Engineered new procedure for underwriting large transactions that became company-wide standard. Procedure supported over $5 billion worth of transactions and generated an additional $150k per month of revenue for the company.
+                                    </li>
+                                    <li>
+                                        <b>Client Management:</b> Collaborated with a diverse set of clients to identify key issues, implemented product enhancements, and delivered value-added solutions. This versatility allowed the company to expand its service offerings, diversify revenue streams, and focus on high-margin transactions.
+                                    </li>
+                                    <li>
+                                        <b>Process Improvement:</b> Used Visual Basic to automate and improve existing underwriting processes, which saved 10+ hours of work per week and increased profit margins by approximately 5% per project.
+                                    </li>
+                                    <li>
+                                        <b>Leadership:</b> Hosted a company-wide technical skills workshop covering Excel and market data platforms. Sharing knowledge and modeling techniques with colleagues helped increase productivity, break down information silos, and significantly boost morale.
+                                    </li>
+                                    <li>
+                                        <b>Project Management:</b> Spearheaded large-scale projects that generated approximately $500k in revenue for the company by engaging key stakeholders, meeting critical deadlines, and delivering results to executives. Projects were completed on time with a 100% client-reported satisfaction rate.
+                                    </li>
+                                    <li>
+                                        <b>Mentorship:</b> Taught new analysts the requisite skills and techniques required to succeed in the workplace and provided guidance in order to help them navigate the professional world post college.
+                                    </li>
+                                    <li>
+                                        <b>Data Analytics:</b>Built interactive excel dashboard that helped client assess risk by distilling thousands of data points into actionable information. Successfully mitigated $10 million of exposure.
+                                        </li>
+                                    <li>
+                                        <b>International Communication:</b> Coordinated and managed team of associates in India for time sensitive projects. Built and maintained strong communication channels to effectively organize project goals which resulted in a 20% reduction in project lead time.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--end job bullets-->
+                    </div> <!--end job-->
+                
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">DORAL BANK <small><i>(full-service community bank)</i></small></div>
+                                <div class="job-title">Senior Analyst</div>
+                            </div>
+                            <div>
+                                <div class="job-location">New York, NY</div>
+                                <div class="job-length">September 2013 - April 2015</div>
+                            </div>
+                        </div> <!--end job-title-container-->
+                        <div class="job-bullets">
+                            <ul>
+                                <li>
+                                    <b>Strategic Analysis:</b> Monitored and maintained mission critical Excel dashboard used to recommend strategies to management for a portfolio of 1,800+ nonperforming loans totaling approximately $180 million.
+                                </li>
+                                <li>
+                                    <b>Cross Functional Collaboration:</b> Interfaced with and led team of 20 commercial loan specialists in Puerto Rico to develop procedures for the collection of weekly loan status updates. Established strong communication by holding bimonthly meetings in the San Juan office.
+                                </li>
+                                <li>
+                                    <b>Process Improvement:</b> Saved 5+ hours per week by utilizing indexed queries and nested conditional statements to automate the transcription of data from 20 individual sources into one centralized dashboard used to generate comprehensive reports and provide actionable information to management.
+                                </li>
+                            </ul>
+                            </div> <!--end job bullets-->
+                    </div> <!--end job-->
+                </div>
+            </section>
+            
+            <section>
+                <div class="section-title">
+                    <img class=section-img src="images/Education.svg" alt="educationbanner">
+                </div>
+                <div>
+                    <div class="job">
+                        <div class="job-title-container">
+                            <div>
+                                <div class="job-company">VANDERBILT UNIVERSITY</div>
+                                <div class="job-title">Bachelor of Arts - Economics</div>
+                            </div>
+                            <div>
+                                <div class="job-location">Nashvile, TN</div>
+                                <div class="job-length">Class of 2013</div>
+                            </div>
+                        </div> <!--end job-title-container-->
+                        <div class="job-bullets">
+                                <ul>
+                                    <li>
+                                        <b>Honors:</b> - Graduated with Latin Honors: <i>Cum Laude</i>, Dean's List
+                                    </li>
+                                    <li>
+                                        <b>Memberships:</b> S.P.E.A.R., The McGill Project, Omicron Delta Epsilon Economics Honors Society
+                                    </li>
+                                    <li>
+                                        <b>Other:</b> Studied abroad in Copenhagen, Denmark - Spring 2012
+                                    </li>
+                                </ul>
+                                </div> <!--end job bullets-->
+                            </div> <!--end job-->
+                        </div>
+                    </div> <!--end resume-->
+                </div> <!--end resume container-->
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div id="contactModal" class="myModal">
+        <div class="modal-content">
+            <span class="closeBtn" data-modal="contactModal">&times;</span>
+            <h2>Contact</h2>
+            
+            <div class="modal-body">
+                <form name=contact method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                    <div class="input-labels">Full Name</div>
+                    <input type="text" id="name" name="name" placeholder="">
+    
+                    <div class="input-labels">Email Address</div>
+                    <input type="text" id="email" name="email" placeholder="">
+    
+                    <div class="input-labels">Subject</div>
+                    <input type="text" id="subject" name="subject" placeholder="">
+    
+                    <div class="input-labels">Your Message</div>
+                    <textarea id="message" name="message" placeholder="" style="height:20vh"></textarea>
+                    <div captchacontainer>
+                    <div data-netlify-recaptcha="true" id="captcha"></div>
+                    </div>  
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            
+            <div class="icon-container">
+            <a href="https://www.linkedin.com/in/jordanhaddad/"><span class="fa-stack fa-lg circle-icon">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+            </span></a>
+            <a href="https://github.com/haddadjm"><span class="fa-stack fa-lg circle-icon">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x"></i>
+            </span></a>
+            <a href="https://www.twitter.com/jmhaddy"><span class="fa-stack fa-lg circle-icon">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fab fa-twitter fa-stack-1x"></i>
+            </span></a>
+            <a href="tel:1-214-405-9583"><span class="fa-stack fa-lg circle-icon">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fas fa-phone fa-stack-1x"></i>
+            </span></a>
+            </div>
+        </div>
+    </div>
+        
+    
 </body>
 </html>

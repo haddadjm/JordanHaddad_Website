@@ -1,11 +1,56 @@
-// ES6 Class
+
+//Modal Buttons
+//Get modal element
+window.onload = function() {
+  var btn = document.getElementsByClassName("button");
+  for (var i = 0; i < btn.length; i++) {
+    var thisBtn = btn[i];
+    thisBtn.addEventListener("click", function(){
+      var modal = document.getElementById(this.dataset.modal);
+      $(modal).fadeIn(1000);
+  }, false);
+  }
+//Close Button
+  var btn = document.getElementsByClassName("closeBtn");
+  for (var i = 0; i < btn.length; i++) {
+    var thisBtn = btn[i];
+    thisBtn.addEventListener("click", function(){
+      var modal = document.getElementById(this.dataset.modal);
+      $(modal).fadeOut(1000);
+  }, false);
+  }
+
+//Outside Click
+var modal1 = document.getElementById('introModal');
+var modal2 = document.getElementById('aboutModal');
+var modal3 = document.getElementById('resumeModal');
+var modal4 = document.getElementById('contactModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    $(modal1).fadeOut(1000);
+  }
+  if (event.target == modal2) {
+    $(modal2).fadeOut(1000);
+  }
+  if (event.target == modal3) {
+    $(modal3).fadeOut(1000);
+  }
+  if (event.target == modal4) {
+    $(modal4).fadeOut(1000);
+  }
+}
+}
+
+// Typewriter ES6 Class
 class TypeWriter {
-  constructor(txtElement, words, wait = 3000) {
+  constructor(txtElement, words, wait = 1000) {
     this.txtElement = txtElement;
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
+    this.wait = parseInt(wait, 8);
     this.type();
     this.isDeleting = false;
   }
@@ -46,7 +91,7 @@ class TypeWriter {
       // Move to next word
       this.wordIndex++;
       // Pause before start typing
-      typeSpeed = 500;
+      typeSpeed = 200;
     }
 
     setTimeout(() => this.type(), typeSpeed);
@@ -80,5 +125,6 @@ window.addEventListener('scroll', function(e) {
     
     target[index].style.transform = 'translate3d(' + positionX +'px,' + positionY + 'px, 0px)'
   }
-  
 })
+
+
