@@ -88,11 +88,17 @@ a {
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 2px;
-  border: 1pt solid white;
+  border-top: 1pt solid white;
+  border-left: 1pt solid white;
+  border-right: 1pt solid white;
 }
 
 .button:hover {
   background-color: rgba(99, 97, 97, 0.5);
+}
+
+#Contact {
+  border-bottom: 1pt solid white;
 }
 
 .myModal {
@@ -498,7 +504,13 @@ input[type=submit]:hover {
     font-size: 18px;
     padding: 1rem;
     width: 175px;
-    border: 1pt solid white;
+    border: none;
+    border-top: 1pt solid white;
+    border-bottom: 1pt solid white;
+    border-left: 1pt solid white;
+  }
+  #Contact {
+    border-right: 1pt solid white;
   }
   .modal-content {
     padding: 2.5rem;
