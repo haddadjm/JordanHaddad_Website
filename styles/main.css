@@ -267,6 +267,32 @@ input[type=submit]:hover {
   display: none;
 }
 
+#aboutModal ul li {
+  font-weight: 400;
+  list-style: none;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+#aboutModal ul li:last-child {
+  padding-bottom: 0;
+}
+
+#aboutModal ul li::before {
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: -5%;
+  left: -25px;
+  content: "\00BB \0020";
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#aboutModal ul li li {
+  position: relative;
+}
+
 #resumeModal {
   display: none;
 }
