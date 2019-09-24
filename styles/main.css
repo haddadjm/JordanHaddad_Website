@@ -89,10 +89,14 @@ a {
   font-size: 12px;
   letter-spacing: 2px;
   border-bottom: 1pt solid white;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 
 .button:hover {
   background-color: rgba(99, 97, 97, 0.5);
+  -webkit-transition: 1s ease-in;
+  transition: 1s ease-in;
 }
 
 #Contact {
@@ -574,8 +578,8 @@ input[type=submit]:hover {
     height: 400px;
     width: 60%;
     background-position: center;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in;
+    transition: 1s ease-in;
   }
   #photo-me {
     height: 200px;
@@ -588,8 +592,8 @@ input[type=submit]:hover {
     height: 400px;
     width: 60%;
     background-position: center;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in;
+    transition: 1s ease-in;
   }
   footer {
     font-size: 14px;

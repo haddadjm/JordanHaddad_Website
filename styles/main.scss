@@ -81,10 +81,12 @@ a {
     font-size: 12px;
     letter-spacing: 2px;
     border-bottom: 1pt solid white;
+    transition: 1s ease-out;
     
     
     &:hover {
         background-color:rgba(99, 97, 97, 0.5);
+        transition: 1s ease-in;
     }
 }
 
@@ -583,7 +585,7 @@ input[type=submit] {
             height: 400px;
             width: 60%;
             background-position: center;
-            transition: 1s ease-in-out;
+            transition: 1s ease-in;
         }
     }
     
@@ -597,7 +599,7 @@ input[type=submit] {
             height: 400px;
             width: 60%;
             background-position: center;
-            transition: 1s ease-in-out;
+            transition: 1s ease-in;
         }
     }
     
