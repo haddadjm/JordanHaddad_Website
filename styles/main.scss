@@ -415,6 +415,10 @@ input[type=submit] {
     #headshot{
         background-position-y: 40%;
     }
+
+    footer {
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width:700px) {
@@ -596,6 +600,10 @@ input[type=submit] {
             transition: 1s ease-in-out;
         }
     }
+    
+    footer {
+        font-size: 14px;
+    }
 }
 
 
@@ -696,4 +704,13 @@ input[type=submit] {
             font-size: 16px;
         }  
     }
+}
+
+footer {
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
 }

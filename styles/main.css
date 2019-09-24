@@ -432,6 +432,9 @@ input[type=submit]:hover {
   #headshot {
     background-position-y: 40%;
   }
+  footer {
+    font-size: 10px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -588,6 +591,9 @@ input[type=submit]:hover {
     -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
   }
+  footer {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 2200px) {
@@ -676,5 +682,15 @@ input[type=submit]:hover {
     font-weight: 400;
     font-size: 16px;
   }
+}
+
+footer {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: whitesmoke;
 }
 /*# sourceMappingURL=main.css.map */
