@@ -161,6 +161,7 @@ a {
 
 .modal-content li {
   font-size: 14px;
+  font-size: initial;
 }
 
 .modal-content .modal-image {
